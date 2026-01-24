@@ -60,9 +60,9 @@ const fields = [
       <h3 className='text-lg font-semibold text-gray-900'>Personal Information</h3>
       <p className='text-sm text-gray-600'>Get Started with the personal information</p>
 
-      <div className='flex items-center gap-2'>
-        <label>
-  {data.image ? (
+      {/* <div className='flex items-center gap-2'> */}
+        {/* <label> */}
+  {/* {data.image ? (
     <img
       src={
         typeof data.image === 'string'
@@ -77,16 +77,16 @@ const fields = [
       <User className="size-10 p-2.5 border rounded-full" />
       upload user image
     </div>
-  )}
+  )} */}
 
-  <input
+  {/* <input
     type="file"
     accept="image/jpeg, image/png"
     className="hidden"
     onChange={(e) => {handleChange("image",e.target.files[0])}}
   />
-</label>
-{typeof data.image === 'object' && (
+</label> */}
+{/* {typeof data.image === 'object' && (
   <div className="flex flex-col gap-1 pl-4 text-sm">
     <p>Remove Background</p>
 
@@ -104,8 +104,8 @@ const fields = [
 
     </label>
   </div>
-)}
-      </div>
+)} */}
+      {/* </div> */}
 
 {fields.map((field) => {
   const Icon = field.icon;
